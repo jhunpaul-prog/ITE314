@@ -9,6 +9,10 @@ const age = "secret";
 const schoolEmail = "jhma.ceniza.swu@phinmaed.com";
 
 // Routes
+app.get('/', (req, res) => {
+    res.send("TESTING LANG");
+});
+
 app.get('/firstname', (req, res) => {
     res.send(firstName.toUpperCase());
 });
